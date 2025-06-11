@@ -32,7 +32,7 @@ def main():
             super().__init__(**kargs, title="pmoji")
 
             self.set_default_size(200, 80)
-
+            # self.props.keep_above = True
             self.props.show_menubar = (
                 True  # This is needed since the menubar hides by default
             )
@@ -45,6 +45,9 @@ def main():
 
             button2 = EmojiButton("🥀")
             box.append(button2)
+
+            button3 = EmojiButton("❤️‍🩹")
+            box.append(button3)
 
     def on_activate(app):
         win = MyWindow(application=app)
