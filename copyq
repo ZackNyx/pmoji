@@ -1,0 +1,8 @@
+==> standard input <==
+            for emoji in emoji_dict.keys():
+                self.grid.attach(EmojiButton(emoji), row, column, 1, 1)
+                if row < 7:
+                    row += 1
+                else:
+                    row = 0
+                    column += 1
